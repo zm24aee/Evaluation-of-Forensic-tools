@@ -1,0 +1,38 @@
+[
+  {
+    "label": "benign_run1",
+    "timestamp": "20260416_225513",
+    "path": "C:\\forensic\\Images\\benign_run1.mem",
+    "sha256": "2c0b7e6564ee8be970f11fe90e067aad302412d49822dcfd96487926b6ad83c6"
+  },
+  {
+    "label": "benign_run2",
+    "timestamp": "20260416_225535",
+    "path": "C:\\forensic\\Images\\benign_run2.mem",
+    "sha256": "9dd4505156a99b88e474a7e05254cdac9d8bc1c1dcfa8d3128ea2fccb2ef6338"
+  },
+  {
+    "label": "benign_run3",
+    "timestamp": "20260416_225552",
+    "path": "C:\\forensic\\Images\\benign_run3.mem",
+    "sha256": "1103cf59d1147079eaeb089bf2755179a28787f171ebf4160a6e87f3032742e4"
+  },
+  {
+    "label": "fileless_run1",
+    "timestamp": "20260416_225611",
+    "path": "C:\\forensic\\Images\\fileless_run1.mem",
+    "sha256": "260dd8b30fa32273da184818e3375a1fffc47c585118c72f89b169423f442e4d"
+  },
+  {
+    "label": "fileless_run2",
+    "timestamp": "20260416_225633",
+    "path": "C:\\forensic\\Images\\fileless_run2.mem",
+    "sha256": "52bdbb6c32378dc8b2124b423e0f239293b64a99d2a1406eeaf88652d3a6f024"
+  },
+  {
+    "label": "fileless_run3",
+    "timestamp": "20260416_225658",
+    "path": "C:\\forensic\\Images\\fileless_run3.mem",
+    "sha256": "006a28c468d3c9f3fe4a69235be9d2bf64a16669ded59da4ff3bb3ba559de0d3"
+  }
+]
