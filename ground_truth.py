@@ -5,7 +5,7 @@ ground_truth.py
 from dataclasses import dataclass
 from typing import List, Dict
 
-# ─────────────────────────────────────────────
+
 # DATA STRUCTURE
 # ─────────────────────────────────────────────
 @dataclass
