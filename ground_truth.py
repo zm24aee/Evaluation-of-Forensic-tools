@@ -1,13 +1,9 @@
 """
 ground_truth.py
-===============
-Defines expected forensic artefacts per scenario with
-multi-level evidence for robust evaluation.
-"""
+
 
 from dataclasses import dataclass
 from typing import List, Dict
-
 
 # ─────────────────────────────────────────────
 # DATA STRUCTURE
