@@ -1,0 +1,739 @@
+{
+  "phase": "Phase 5 - Volatility3 Analysis",
+  "run_timestamp": "2026-04-18T16:53:42.259479",
+  "total_images": 6,
+  "results": {
+    "benign_run1": {
+      "label": "benign_run1",
+      "scenario_type": "BENIGN",
+      "tool": "Volatility3",
+      "image": "C:\\Forensic\\Images\\benign_run1.mem",
+      "timestamp": "2026-04-18T14:17:36.474764",
+      "plugins": {
+        "windows.pslist": {
+          "output_lines": 174,
+          "stderr_lines": 12,
+          "duration_s": 6.87,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run1\\pslist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run1\\pslist_stderr.txt"
+        },
+        "windows.pstree": {
+          "output_lines": 173,
+          "stderr_lines": 12,
+          "duration_s": 5.52,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run1\\pstree.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run1\\pstree_stderr.txt"
+        },
+        "windows.cmdline": {
+          "output_lines": 174,
+          "stderr_lines": 12,
+          "duration_s": 2.26,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run1\\cmdline.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run1\\cmdline_stderr.txt"
+        },
+        "windows.malfind": {
+          "output_lines": 84,
+          "stderr_lines": 16,
+          "duration_s": 663.74,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run1\\malfind.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run1\\malfind_stderr.txt"
+        },
+        "windows.netscan": {
+          "output_lines": 4,
+          "stderr_lines": 12,
+          "duration_s": 257.31,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run1\\netscan.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run1\\netscan_stderr.txt"
+        },
+        "windows.dlllist": {
+          "output_lines": 2772,
+          "stderr_lines": 36,
+          "duration_s": 16.16,
+          "returncode": 1,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run1\\dlllist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run1\\dlllist_stderr.txt"
+        },
+        "windows.vadinfo": {
+          "output_lines": 25999,
+          "stderr_lines": 12,
+          "duration_s": 678.73,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run1\\vadinfo.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run1\\vadinfo_stderr.txt"
+        }
+      },
+      "false_positives": [],
+      "true_detections": [],
+      "ground_truth_eval": {
+        "scenario_type": "benign",
+        "expected_count": 0,
+        "recovered_count": 0,
+        "missed_count": 0,
+        "recovered": [],
+        "missed": []
+      },
+      "metrics": {
+        "label": "benign_run1",
+        "expected_artefacts": 0,
+        "recovered_artefacts": 0,
+        "missed_artefacts": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "recall": null,
+        "detection_accuracy_pct": 100.0
+      },
+      "total_duration_s": 1630.68
+    },
+    "benign_run2": {
+      "label": "benign_run2",
+      "scenario_type": "BENIGN",
+      "tool": "Volatility3",
+      "image": "C:\\Forensic\\Images\\benign_run2.mem",
+      "timestamp": "2026-04-18T14:44:47.167883",
+      "plugins": {
+        "windows.pslist": {
+          "output_lines": 168,
+          "stderr_lines": 12,
+          "duration_s": 2.8,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run2\\pslist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run2\\pslist_stderr.txt"
+        },
+        "windows.pstree": {
+          "output_lines": 167,
+          "stderr_lines": 12,
+          "duration_s": 4.55,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run2\\pstree.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run2\\pstree_stderr.txt"
+        },
+        "windows.cmdline": {
+          "output_lines": 168,
+          "stderr_lines": 12,
+          "duration_s": 2.2,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run2\\cmdline.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run2\\cmdline_stderr.txt"
+        },
+        "windows.malfind": {
+          "output_lines": 59,
+          "stderr_lines": 16,
+          "duration_s": 516.81,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run2\\malfind.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run2\\malfind_stderr.txt"
+        },
+        "windows.netscan": {
+          "output_lines": 4,
+          "stderr_lines": 12,
+          "duration_s": 191.47,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run2\\netscan.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run2\\netscan_stderr.txt"
+        },
+        "windows.dlllist": {
+          "output_lines": 4036,
+          "stderr_lines": 36,
+          "duration_s": 13.78,
+          "returncode": 1,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run2\\dlllist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run2\\dlllist_stderr.txt"
+        },
+        "windows.vadinfo": {
+          "output_lines": 25431,
+          "stderr_lines": 12,
+          "duration_s": 474.13,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run2\\vadinfo.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run2\\vadinfo_stderr.txt"
+        }
+      },
+      "false_positives": [],
+      "true_detections": [],
+      "ground_truth_eval": {
+        "scenario_type": "benign",
+        "expected_count": 0,
+        "recovered_count": 0,
+        "missed_count": 0,
+        "recovered": [],
+        "missed": []
+      },
+      "metrics": {
+        "label": "benign_run2",
+        "expected_artefacts": 0,
+        "recovered_artefacts": 0,
+        "missed_artefacts": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "recall": null,
+        "detection_accuracy_pct": 100.0
+      },
+      "total_duration_s": 1205.82
+    },
+    "benign_run3": {
+      "label": "benign_run3",
+      "scenario_type": "BENIGN",
+      "tool": "Volatility3",
+      "image": "C:\\Forensic\\Images\\benign_run3.mem",
+      "timestamp": "2026-04-18T15:04:53.013426",
+      "plugins": {
+        "windows.pslist": {
+          "output_lines": 138,
+          "stderr_lines": 12,
+          "duration_s": 2.72,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run3\\pslist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run3\\pslist_stderr.txt"
+        },
+        "windows.pstree": {
+          "output_lines": 138,
+          "stderr_lines": 12,
+          "duration_s": 3.92,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run3\\pstree.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run3\\pstree_stderr.txt"
+        },
+        "windows.cmdline": {
+          "output_lines": 138,
+          "stderr_lines": 12,
+          "duration_s": 2.15,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run3\\cmdline.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run3\\cmdline_stderr.txt"
+        },
+        "windows.malfind": {
+          "output_lines": 9,
+          "stderr_lines": 16,
+          "duration_s": 235.63,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run3\\malfind.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run3\\malfind_stderr.txt"
+        },
+        "windows.netscan": {
+          "output_lines": 4,
+          "stderr_lines": 12,
+          "duration_s": 161.94,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run3\\netscan.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run3\\netscan_stderr.txt"
+        },
+        "windows.dlllist": {
+          "output_lines": 2106,
+          "stderr_lines": 36,
+          "duration_s": 7.91,
+          "returncode": 1,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run3\\dlllist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run3\\dlllist_stderr.txt"
+        },
+        "windows.vadinfo": {
+          "output_lines": 18772,
+          "stderr_lines": 12,
+          "duration_s": 316.99,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\benign_run3\\vadinfo.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\benign_run3\\vadinfo_stderr.txt"
+        }
+      },
+      "false_positives": [],
+      "true_detections": [],
+      "ground_truth_eval": {
+        "scenario_type": "benign",
+        "expected_count": 0,
+        "recovered_count": 0,
+        "missed_count": 0,
+        "recovered": [],
+        "missed": []
+      },
+      "metrics": {
+        "label": "benign_run3",
+        "expected_artefacts": 0,
+        "recovered_artefacts": 0,
+        "missed_artefacts": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "recall": null,
+        "detection_accuracy_pct": 100.0
+      },
+      "total_duration_s": 731.32
+    },
+    "fileless_run1": {
+      "label": "fileless_run1",
+      "scenario_type": "FILELESS",
+      "tool": "Volatility3",
+      "image": "C:\\Forensic\\Images\\fileless_run1.mem",
+      "timestamp": "2026-04-18T15:17:04.350107",
+      "plugins": {
+        "windows.pslist": {
+          "output_lines": 167,
+          "stderr_lines": 12,
+          "duration_s": 2.85,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run1\\pslist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run1\\pslist_stderr.txt"
+        },
+        "windows.pstree": {
+          "output_lines": 167,
+          "stderr_lines": 12,
+          "duration_s": 4.82,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run1\\pstree.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run1\\pstree_stderr.txt"
+        },
+        "windows.cmdline": {
+          "output_lines": 167,
+          "stderr_lines": 12,
+          "duration_s": 2.3,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run1\\cmdline.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run1\\cmdline_stderr.txt"
+        },
+        "windows.malfind": {
+          "output_lines": 29,
+          "stderr_lines": 16,
+          "duration_s": 560.01,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run1\\malfind.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run1\\malfind_stderr.txt"
+        },
+        "windows.netscan": {
+          "output_lines": 4,
+          "stderr_lines": 12,
+          "duration_s": 186.36,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run1\\netscan.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run1\\netscan_stderr.txt"
+        },
+        "windows.dlllist": {
+          "output_lines": 2728,
+          "stderr_lines": 36,
+          "duration_s": 10.5,
+          "returncode": 1,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run1\\dlllist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run1\\dlllist_stderr.txt"
+        },
+        "windows.vadinfo": {
+          "output_lines": 23980,
+          "stderr_lines": 12,
+          "duration_s": 396.55,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run1\\vadinfo.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run1\\vadinfo_stderr.txt"
+        }
+      },
+      "false_positives": [],
+      "true_detections": [
+        {
+          "artefact_id": "FA-01",
+          "artefact_type": "EncodedCommand",
+          "description": "Encoded PowerShell command in process cmdline",
+          "expected_plugins": [
+            "windows.cmdline"
+          ],
+          "expected_keywords": [
+            "-encodedcommand",
+            "-enc",
+            "powershell"
+          ],
+          "matched_keywords": [
+            "powershell"
+          ],
+          "matched": true
+        },
+        {
+          "artefact_id": "FA-02",
+          "artefact_type": "SuspiciousProcess",
+          "description": "Presence of PowerShell process executing payload",
+          "expected_plugins": [
+            "windows.pslist",
+            "windows.pstree"
+          ],
+          "expected_keywords": [
+            "powershell.exe"
+          ],
+          "matched_keywords": [
+            "powershell.exe"
+          ],
+          "matched": true
+        },
+        {
+          "artefact_id": "FA-03",
+          "artefact_type": "MemoryExecution",
+          "description": "Executable memory region consistent with script execution",
+          "expected_plugins": [
+            "windows.malfind",
+            "windows.vadinfo"
+          ],
+          "expected_keywords": [
+            "execute",
+            "private",
+            "write"
+          ],
+          "matched_keywords": [
+            "write",
+            "private",
+            "execute"
+          ],
+          "matched": true
+        }
+      ],
+      "ground_truth_eval": {
+        "scenario_type": "fileless",
+        "expected_count": 3,
+        "recovered_count": 3,
+        "missed_count": 0,
+        "recovered": [
+          {
+            "artefact_id": "FA-01",
+            "artefact_type": "EncodedCommand",
+            "description": "Encoded PowerShell command in process cmdline",
+            "expected_plugins": [
+              "windows.cmdline"
+            ],
+            "expected_keywords": [
+              "-encodedcommand",
+              "-enc",
+              "powershell"
+            ],
+            "matched_keywords": [
+              "powershell"
+            ],
+            "matched": true
+          },
+          {
+            "artefact_id": "FA-02",
+            "artefact_type": "SuspiciousProcess",
+            "description": "Presence of PowerShell process executing payload",
+            "expected_plugins": [
+              "windows.pslist",
+              "windows.pstree"
+            ],
+            "expected_keywords": [
+              "powershell.exe"
+            ],
+            "matched_keywords": [
+              "powershell.exe"
+            ],
+            "matched": true
+          },
+          {
+            "artefact_id": "FA-03",
+            "artefact_type": "MemoryExecution",
+            "description": "Executable memory region consistent with script execution",
+            "expected_plugins": [
+              "windows.malfind",
+              "windows.vadinfo"
+            ],
+            "expected_keywords": [
+              "execute",
+              "private",
+              "write"
+            ],
+            "matched_keywords": [
+              "write",
+              "private",
+              "execute"
+            ],
+            "matched": true
+          }
+        ],
+        "missed": []
+      },
+      "metrics": {
+        "label": "fileless_run1",
+        "expected_artefacts": 3,
+        "recovered_artefacts": 3,
+        "missed_artefacts": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "detection_accuracy_pct": 100.0
+      },
+      "total_duration_s": 2880.91
+    },
+    "fileless_run2": {
+      "label": "fileless_run2",
+      "scenario_type": "FILELESS",
+      "tool": "Volatility3",
+      "image": "C:\\Forensic\\Images\\fileless_run2.mem",
+      "timestamp": "2026-04-18T16:05:05.271488",
+      "plugins": {
+        "windows.pslist": {
+          "output_lines": 140,
+          "stderr_lines": 12,
+          "duration_s": 2.46,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run2\\pslist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run2\\pslist_stderr.txt"
+        },
+        "windows.pstree": {
+          "output_lines": 139,
+          "stderr_lines": 12,
+          "duration_s": 3.59,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run2\\pstree.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run2\\pstree_stderr.txt"
+        },
+        "windows.cmdline": {
+          "output_lines": 140,
+          "stderr_lines": 12,
+          "duration_s": 2.06,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run2\\cmdline.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run2\\cmdline_stderr.txt"
+        },
+        "windows.malfind": {
+          "output_lines": 14,
+          "stderr_lines": 16,
+          "duration_s": 199.03,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run2\\malfind.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run2\\malfind_stderr.txt"
+        },
+        "windows.netscan": {
+          "output_lines": 4,
+          "stderr_lines": 12,
+          "duration_s": 179.56,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run2\\netscan.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run2\\netscan_stderr.txt"
+        },
+        "windows.dlllist": {
+          "output_lines": 2369,
+          "stderr_lines": 36,
+          "duration_s": 8.98,
+          "returncode": 1,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run2\\dlllist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run2\\dlllist_stderr.txt"
+        },
+        "windows.vadinfo": {
+          "output_lines": 5662,
+          "stderr_lines": 36,
+          "duration_s": 48.49,
+          "returncode": 1,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run2\\vadinfo.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run2\\vadinfo_stderr.txt"
+        }
+      },
+      "false_positives": [],
+      "true_detections": [],
+      "ground_truth_eval": {
+        "scenario_type": "fileless",
+        "expected_count": 3,
+        "recovered_count": 0,
+        "missed_count": 3,
+        "recovered": [],
+        "missed": [
+          {
+            "artefact_id": "FA-04",
+            "artefact_type": "WMIProcess",
+            "description": "WmiPrvSE spawning process",
+            "expected_plugins": [
+              "windows.pstree"
+            ],
+            "expected_keywords": [
+              "wmiprvse"
+            ],
+            "matched_keywords": [],
+            "matched": false
+          },
+          {
+            "artefact_id": "FA-05",
+            "artefact_type": "WMICommand",
+            "description": "WMI execution command in cmdline",
+            "expected_plugins": [
+              "windows.cmdline"
+            ],
+            "expected_keywords": [
+              "invoke-wmimethod",
+              "wmic",
+              "invoke-"
+            ],
+            "matched_keywords": [],
+            "matched": false
+          },
+          {
+            "artefact_id": "FA-06",
+            "artefact_type": "ProcessAnomaly",
+            "description": "Unexpected process chain or execution path",
+            "expected_plugins": [
+              "windows.pstree"
+            ],
+            "expected_keywords": [
+              "cmd.exe",
+              "powershell"
+            ],
+            "matched_keywords": [],
+            "matched": false
+          }
+        ]
+      },
+      "metrics": {
+        "label": "fileless_run2",
+        "expected_artefacts": 3,
+        "recovered_artefacts": 0,
+        "missed_artefacts": 3,
+        "false_positive_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "detection_accuracy_pct": 0.0
+      },
+      "total_duration_s": 641.52
+    },
+    "fileless_run3": {
+      "label": "fileless_run3",
+      "scenario_type": "FILELESS",
+      "tool": "Volatility3",
+      "image": "C:\\Forensic\\Images\\fileless_run3.mem",
+      "timestamp": "2026-04-18T16:15:46.799257",
+      "plugins": {
+        "windows.pslist": {
+          "output_lines": 162,
+          "stderr_lines": 12,
+          "duration_s": 5.59,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run3\\pslist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run3\\pslist_stderr.txt"
+        },
+        "windows.pstree": {
+          "output_lines": 161,
+          "stderr_lines": 12,
+          "duration_s": 6.33,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run3\\pstree.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run3\\pstree_stderr.txt"
+        },
+        "windows.cmdline": {
+          "output_lines": 162,
+          "stderr_lines": 12,
+          "duration_s": 3.32,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run3\\cmdline.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run3\\cmdline_stderr.txt"
+        },
+        "windows.malfind": {
+          "output_lines": 39,
+          "stderr_lines": 16,
+          "duration_s": 369.31,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run3\\malfind.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run3\\malfind_stderr.txt"
+        },
+        "windows.netscan": {
+          "output_lines": 4,
+          "stderr_lines": 12,
+          "duration_s": 203.98,
+          "returncode": 0,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run3\\netscan.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run3\\netscan_stderr.txt"
+        },
+        "windows.dlllist": {
+          "output_lines": 2722,
+          "stderr_lines": 36,
+          "duration_s": 14.5,
+          "returncode": 1,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run3\\dlllist.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run3\\dlllist_stderr.txt"
+        },
+        "windows.vadinfo": {
+          "output_lines": 17120,
+          "stderr_lines": 36,
+          "duration_s": 286.89,
+          "returncode": 1,
+          "output_file": "C:\\Forensic\\Volatility\\fileless_run3\\vadinfo.txt",
+          "stderr_file": "C:\\Forensic\\Volatility\\fileless_run3\\vadinfo_stderr.txt"
+        }
+      },
+      "false_positives": [],
+      "true_detections": [
+        {
+          "artefact_id": "FA-09",
+          "artefact_type": "ExecutableVAD",
+          "description": "Private executable memory region",
+          "expected_plugins": [
+            "windows.vadinfo"
+          ],
+          "expected_keywords": [
+            "execute",
+            "private"
+          ],
+          "matched_keywords": [
+            "private",
+            "execute"
+          ],
+          "matched": true
+        }
+      ],
+      "ground_truth_eval": {
+        "scenario_type": "fileless",
+        "expected_count": 3,
+        "recovered_count": 1,
+        "missed_count": 2,
+        "recovered": [
+          {
+            "artefact_id": "FA-09",
+            "artefact_type": "ExecutableVAD",
+            "description": "Private executable memory region",
+            "expected_plugins": [
+              "windows.vadinfo"
+            ],
+            "expected_keywords": [
+              "execute",
+              "private"
+            ],
+            "matched_keywords": [
+              "private",
+              "execute"
+            ],
+            "matched": true
+          }
+        ],
+        "missed": [
+          {
+            "artefact_id": "FA-07",
+            "artefact_type": "ReflectiveInjection",
+            "description": "Indicators of in-memory .NET / reflective loading",
+            "expected_plugins": [
+              "windows.cmdline"
+            ],
+            "expected_keywords": [
+              "reflection",
+              "assembly",
+              "add-type"
+            ],
+            "matched_keywords": [],
+            "matched": false
+          },
+          {
+            "artefact_id": "FA-08",
+            "artefact_type": "InjectedMemory",
+            "description": "Memory region with PE header (MZ)",
+            "expected_plugins": [
+              "windows.malfind"
+            ],
+            "expected_keywords": [
+              "mz"
+            ],
+            "matched_keywords": [],
+            "matched": false
+          }
+        ]
+      },
+      "metrics": {
+        "label": "fileless_run3",
+        "expected_artefacts": 3,
+        "recovered_artefacts": 1,
+        "missed_artefacts": 2,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "recall": 0.333,
+        "detection_accuracy_pct": 33.33
+      },
+      "total_duration_s": 2275.45
+    }
+  }
+}
