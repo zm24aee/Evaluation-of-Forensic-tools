@@ -1,0 +1,27 @@
+# Fileless Run 3 — In-memory reflective execution
+
+$code = @"
+using System;
+using System.Diagnostics;
+
+public class FilelessPayload {
+    public static void Run() {
+        var procs = Process.GetProcesses();
+        Console.WriteLine("Reflective payload active — PID: " + 
+                          Process.GetCurrentProcess().Id);
+        Console.WriteLine("Total processes in memory: " + procs.Length);
+        System.Threading.Thread.Sleep(120000);
+    }
+}
+"@
+
+Add-Type -TypeDefinition $code -Language CSharp
+
+$job = Start-Job -ScriptBlock {
+    Add-Type -TypeDefinition $using:code -Language CSharp
+    [FilelessPayload]::Run()
+}
+
+Write-Host "[+] Reflective fileless scenario running! Job ID: $($job.Id)" -ForegroundColor Green
+Write-Host "[+] Capture RAM with FTK Imager NOW!" -ForegroundColor Yellow
+Start-Sleep -Seconds 120

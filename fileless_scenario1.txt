@@ -1,0 +1,17 @@
+# Fileless Run 1 — Encoded PowerShell
+$code = @'
+$proc = Get-Process
+$comp = $env:COMPUTERNAME
+$user = $env:USERNAME
+$data = "Fileless Payload Active | Computer: $comp | User: $user | PID: $PID | Processes: $($proc.Count)"
+Write-Host $data -ForegroundColor Red
+Start-Sleep -Seconds 120
+'@
+
+$bytes   = [System.Text.Encoding]::Unicode.GetBytes($code)
+$encoded = [Convert]::ToBase64String($bytes)
+
+Start-Process powershell.exe -ArgumentList "-NoProfile -WindowStyle Hidden -EncodedCommand $encoded"
+
+Write-Host "[+] Fileless scenario 1 running in memory!" -ForegroundColor Green
+Write-Host "[+] Capture RAM with FTK Imager NOW!" -ForegroundColor Yellow

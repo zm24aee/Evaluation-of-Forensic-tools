@@ -1,0 +1,14 @@
+# Fileless Run 2 — WMI based in-memory execution
+
+
+$command = "powershell -NoProfile -WindowStyle Hidden -Command `"
+`$info = Get-WmiObject Win32_ComputerSystem;
+`$proc = Get-Process | Select-Object Name, Id, CPU;
+`$net  = [System.Net.Dns]::GetHostAddresses('localhost');
+Write-Host 'WMI Fileless Active' -ForegroundColor Red;
+Start-Sleep 120`""
+
+Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList $command
+
+Write-Host "[+] WMI fileless scenario running!" -ForegroundColor Green
+Write-Host "[+] Capture RAM with FTK Imager NOW!" -ForegroundColor Yellow
